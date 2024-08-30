@@ -1,0 +1,26 @@
+[2023-09-01 14:45:36,452][root][INFO] - Loading CLIP model openai/clip-vit-large-patch14...
+[2023-09-01 14:45:50,521][root][INFO] - Model loaded to GPU.
+[2023-09-01 14:45:50,524][root][INFO] - GPU available. Loading tensors to GPU.
+[2023-09-01 14:45:51,975][__main__][INFO] - Fitting knn classifier...
+[2023-09-01 14:46:03,828][__main__][INFO] - knn classifier fitted.
+[2023-09-01 14:46:03,948][__main__][INFO] - knn classifier saved.
+[2023-09-01 14:47:20,329][__main__][INFO] - Evaluating top 1 accuracy
+[2023-09-01 14:47:20,862][__main__][INFO] - Top 1 accuracy: 0.74078
+[2023-09-01 14:47:20,862][__main__][INFO] - Evaluating top 2 accuracy
+[2023-09-01 14:47:21,390][__main__][INFO] - Top 2 accuracy: 0.86466
+[2023-09-01 14:47:21,390][__main__][INFO] - Evaluating top 3 accuracy
+[2023-09-01 14:47:21,919][__main__][INFO] - Top 3 accuracy: 0.90922
+[2023-09-01 14:47:21,919][__main__][INFO] - Evaluating top 4 accuracy
+[2023-09-01 14:47:22,449][__main__][INFO] - Top 4 accuracy: 0.92998
+[2023-09-01 14:47:22,449][__main__][INFO] - Evaluating top 5 accuracy
+[2023-09-01 14:47:22,978][__main__][INFO] - Top 5 accuracy: 0.94188
+[2023-09-01 14:47:22,978][__main__][INFO] - Evaluating top 6 accuracy
+[2023-09-01 14:47:23,509][__main__][INFO] - Top 6 accuracy: 0.95026
+[2023-09-01 14:47:23,509][__main__][INFO] - Evaluating top 7 accuracy
+[2023-09-01 14:47:24,040][__main__][INFO] - Top 7 accuracy: 0.95512
+[2023-09-01 14:47:24,041][__main__][INFO] - Evaluating top 8 accuracy
+[2023-09-01 14:47:24,570][__main__][INFO] - Top 8 accuracy: 0.959
+[2023-09-01 14:47:24,570][__main__][INFO] - Evaluating top 9 accuracy
+[2023-09-01 14:47:25,101][__main__][INFO] - Top 9 accuracy: 0.96196
+[2023-09-01 14:47:25,101][__main__][INFO] - Evaluating top 10 accuracy
+[2023-09-01 14:47:25,632][__main__][INFO] - Top 10 accuracy: 0.96452

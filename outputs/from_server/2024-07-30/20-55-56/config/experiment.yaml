@@ -1,0 +1,19 @@
+hydra:
+  job:
+    chdir: true
+experiment:
+  train_data_folder: train
+  eval_data_folder: val
+  embed_model: clip
+  use_centroids: false
+  centroids_cluster: minibatchkmeans
+  classifier: knn_all
+  seed: 42
+  embed_model_version: clip-vit-large-patch14
+  knn:
+    num_neighbors: 40
+  knn_all:
+    num_neighbors: ${experiment.knn.num_neighbors}
+    num_search_threads: 1
+    num_compare_class_threads: 1
+    num_cos_sim_threads: 1

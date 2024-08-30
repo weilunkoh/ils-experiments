@@ -1,0 +1,37 @@
+hydra:
+  job:
+    chdir: True
+
+experiment:
+  train_data_folder: train
+  eval_data_folder: val
+  embed_model: clip # clip, resnet50, inceptionV3
+  use_centroids: False # True, False
+  centroids_cluster: minibatchkmeans # kmeans, minibatchkmeans
+  classifier: knn_all # knn, logreg, faiss, knn_all, knn_torch
+  seed: 42
+  embed_model_version: clip-vit-large-patch14
+  # embed_model_version: resnet50_IMAGENET1K_V2
+  # embed_model_version: inceptionV3_IMAGENET1K_V1
+  # kmeans:
+  #   num_centroids: 30
+  #   centroids_init: k-means++ # k-means++, incremental
+  #   incremental_step: 0.5 # null or float value 0 < x < 1 (using 0.05, 0.1, 0.25, 0.5)
+  #   max_iter: 300 # 300 is the default value for k-means in sklearn 1.3.0
+  knn:
+    num_neighbors: 1000
+  # knn_torch:
+  #   num_neighbors: ${experiment.knn.num_neighbors}
+  #   batch_size: 10000
+  #   save_jsons: True
+  knn_all:
+    num_neighbors: ${experiment.knn.num_neighbors}
+    num_search_threads: 1
+    num_compare_class_threads: 1
+    num_cos_sim_threads: 1
+  # logreg:
+  #   max_iter: 100 # 100 is the default value for logreg in sklearn 1.3.0
+  # faiss:
+  #   num_neighbors: 30
+  #   index_type: HNSW
+  #   num_outgoing_links: 64

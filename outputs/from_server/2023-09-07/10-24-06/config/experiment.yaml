@@ -1,0 +1,19 @@
+hydra:
+  job:
+    chdir: true
+experiment:
+  train_data_folder: train
+  eval_data_folder: val
+  embed_model: inceptionV3
+  use_centroids: true
+  centroids_cluster: kmeans
+  classifier: knn
+  seed: 42
+  embed_model_version: inceptionV3_IMAGENET1K_V1
+  kmeans:
+    num_centroids: 30
+    centroids_init: k-means++
+    incremental_step: null
+    max_iter: 300
+  knn:
+    num_neighbors: ${experiment.kmeans.num_centroids}
